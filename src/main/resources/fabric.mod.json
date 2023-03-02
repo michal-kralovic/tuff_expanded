@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "tuff_expanded",
+  "version": "${version}",
+
+  "name": "Tuff, Expanded!",
+  "description": "Expands upon Tuff, giving it its well-deserved block variations!",
+  "authors": [
+    "Minkuh"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/tuff_expanded/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.minkuh.tuff_expanded.TuffExpanded"
+    ],
+    "client": [
+      "net.minkuh.tuff_expanded.TuffExpandedClient"
+    ]
+  },
+  "mixins": [
+    "tuff_expanded.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
